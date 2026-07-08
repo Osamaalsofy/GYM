@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, useSpring } from 'motion/react';
 import { Flame, Shield, Activity, Zap, Compass, HeartPulse } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import { gatesTranslations } from '../translations';
+import { getAssetPath } from '../utils';
 
 interface GateProps {
   key?: any;
@@ -61,7 +62,7 @@ function ScrollGate({ num, title, tagline, description, icon, bgImage, accentCol
         {/* Cinematic Background Image Layer */}
         <div className="absolute inset-0 z-0 opacity-20">
           <img 
-            src={bgImage} 
+            src={bgImage.startsWith('http') ? bgImage : getAssetPath(bgImage)}
             alt={title}
             className="w-full h-full object-cover filter brightness-[0.3] grayscale hover:scale-105 transition-transform duration-1000"
             referrerPolicy="no-referrer"

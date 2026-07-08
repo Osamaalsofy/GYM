@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import { programsTranslations } from '../translations';
+import { getAssetPath } from '../utils';
 
 // Specialized workout-specific exercise steps with baseline intensity values
 interface ExerciseStep {
@@ -274,7 +275,7 @@ export default function ClassSchedule() {
                   >
                     {/* Background faint graphic image */}
                     <div className="absolute inset-0 opacity-[0.04] group-hover:scale-105 transition-transform duration-700 pointer-events-none">
-                      <img src={prog.image} alt={title} className="w-full h-full object-cover grayscale" referrerPolicy="no-referrer" />
+                      <img src={getAssetPath(prog.image)} alt={title} className="w-full h-full object-cover grayscale" referrerPolicy="no-referrer" />
                     </div>
 
                     <div className="space-y-3 relative z-10 w-full">
