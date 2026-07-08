@@ -5,7 +5,7 @@ export const trainers: Trainer[] = [
     id: 't1',
     name: "Viktor 'The Anvil' Kovac",
     role: "Lead Combat Director",
-    image: "images/coaches/coach_boxing.jpg",
+    image: "images/coach/Coach.jpg",
     specialty: "Men's Boxing & Striking Protocols",
     bio: "Former cruiserweight champion with 15+ years of professional ring experience. Viktor specializes in heavy power delivery, dynamic head movement, and elite tactical sparring for men.",
     stats: [
@@ -17,7 +17,7 @@ export const trainers: Trainer[] = [
     id: 't2',
     name: "Aria Thorne",
     role: "Vanguard Striking Specialist",
-    image: "images/coaches/coach_kickboxing.jpg",
+    image: "images/coach/Women.jpg",
     specialty: "Women's Kickboxing & Speed Conditioning",
     bio: "Certified Muay Thai kru and speed conditioning coach. Aria designs custom high-velocity kickboxing circuits tailored for female athletes to build explosive hip power and absolute cardiac output.",
     stats: [
@@ -29,7 +29,7 @@ export const trainers: Trainer[] = [
     id: 't3',
     name: "Marcus Vance",
     role: "Lead Strength Architect",
-    image: "images/coaches/coach_strength.jpg",
+    image: "images/coach/Cpm.jpg",
     specialty: "Personal Training & Body Recomposition",
     bio: "World-class strength and conditioning specialist. Marcus develops individualized muscle hypertrophy blueprints, posture alignment, and science-backed compound progression coaching for all lifters.",
     stats: [
@@ -41,7 +41,7 @@ export const trainers: Trainer[] = [
     id: 't4',
     name: "Elena Rostova",
     role: "Kinetic Mobility Coach",
-    image: "images/coaches/coach_gymnastics.jpg",
+    image: "images/coach/gymnastics.jpg",
     specialty: "Gymnastics, Handstands & Core Control",
     bio: "Former master-of-sport artistic gymnast. Elena coaches advanced calisthenics, core stabilization, and extreme overhead shoulder mobility to unlock absolute control of your bodyweight.",
     stats: [
