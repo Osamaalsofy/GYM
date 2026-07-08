@@ -99,7 +99,7 @@ export default function Hero() {
         <div className="absolute bottom-24 w-[350px] md:w-[500px] h-[350px] md:h-[500px] rounded-full bg-[#FF4D00]/15 blur-[100px] -z-10" />
         
         <img 
-          src="/images/BG.png" 
+          src="images/BG.png" 
           alt="Athletic coach in action"
           className="h-[80%] md:h-[90%] object-contain filter brightness-[0.9] contrast-[1.1] drop-shadow-[0_0_50px_rgba(255,77,0,0.25)]"
           onError={(e) => {
