@@ -1,6 +1,0 @@
-{
-  "name": "Cinematic Gym Showcase",
-  "description": "A luxury, professional fitness website experience featuring dramatic 3D scrolling effects, real-time mouse tracking elements, and immersive cinematic layouts.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

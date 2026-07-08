@@ -17,16 +17,11 @@ export function getAssetPath(path: string): string {
   // Normalize path by removing leading slash
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
-  // If running on GitHub Pages (e.g., username.github.io/repo-name)
-  if (typeof window !== 'undefined' && window.location.hostname.endsWith('github.io')) {
-    const pathParts = window.location.pathname.split('/');
-    // pathParts[0] is empty, pathParts[1] is the repository name (e.g., "GYM")
-    const repoName = pathParts[1];
-    if (repoName) {
-      return `/${repoName}/${cleanPath}`;
-    }
-  }
+  // Use Vite's built-in BASE_URL which is handled during build time
+  // and correctly set in vite.config.ts
+  const baseUrl = import.meta.env.BASE_URL || '/';
   
-  // Default to absolute path from root
-  return `/${cleanPath}`;
+  // Ensure baseUrl ends with a slash and combine with cleanPath
+  const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+  return `${normalizedBase}${cleanPath}`;
 }
