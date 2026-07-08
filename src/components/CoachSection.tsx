@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { coachesData, CoachConfig } from '../coachesData';
 import { useLanguage } from '../LanguageContext';
 import { trainersTranslations } from '../translations';
+import { getAssetPath } from '../utils';
 import { 
   Star, 
   Award, 
@@ -251,7 +252,7 @@ export default function CoachSection() {
                         {/* Cinematic Header Image Block */}
                         <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-950 border border-white/5 relative flex-shrink-0">
                           <img 
-                            src={t.image} 
+                            src={getAssetPath(t.image)} 
                             alt={t.name} 
                             className="w-full h-full object-cover filter brightness-[0.75] contrast-105 group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0"
                             referrerPolicy="no-referrer"
@@ -351,7 +352,7 @@ export default function CoachSection() {
               {/* Column 1: Image panel (Left) */}
               <div className="md:col-span-5 relative bg-zinc-950 border-r border-white/5 h-64 md:h-auto overflow-hidden">
                 <img 
-                  src={selectedTrainer.image} 
+                  src={getAssetPath(selectedTrainer.image)} 
                   alt={selectedTrainer.name} 
                   className="w-full h-full object-cover filter brightness-[0.8] contrast-105"
                   referrerPolicy="no-referrer"
