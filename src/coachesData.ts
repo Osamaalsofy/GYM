@@ -7,8 +7,8 @@ import { Trainer } from './types';
  * You can easily customize any trainer here. To edit or replace:
  * 1. Name: Change the 'name' field string.
  * 2. Role: Change the 'role' field string.
- * 3. Image: Place your image in the `public/images/coach/` directory
- *    and update the 'image' path (e.g., "images/coach/my_new_coach.jpg").
+ * 3. Image: Place your image in the `public/images/coaches/` directory
+ *    and update the 'image' path (e.g., "/images/coaches/my_new_coach.jpg").
  * 4. Specialty: Change the 'specialty' field string.
  * 5. Bio: Change the 'bio' field string.
  * 6. Stats: Update the label/value array to show custom trainer performance metrics.
